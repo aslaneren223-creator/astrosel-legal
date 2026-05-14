@@ -1,0 +1,228 @@
+/* Astrosel Legal Pages — shared styles */
+:root {
+  --bg: #0B0912;
+  --surface: #14111E;
+  --border: #1E1B2E;
+  --text: #EDE9F4;
+  --text-muted: #9A8FB0;
+  --text-dim: #4A4460;
+  --accent: #C6A9FF;
+  --accent-2: #7C4DFF;
+  --gold: #E4C76B;
+  --link: #C6A9FF;
+  --link-hover: #E8DEFF;
+  --max-w: 740px;
+  --radius: 14px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.shell {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: clamp(24px, 5vw, 56px) clamp(20px, 4vw, 32px);
+}
+
+header.page {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 20px;
+  margin-bottom: 32px;
+}
+
+header.page .brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--accent);
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+header.page h1 {
+  font-size: clamp(28px, 5vw, 40px);
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  line-height: 1.15;
+  color: var(--text);
+}
+
+header.page .meta {
+  margin-top: 10px;
+  color: var(--text-dim);
+  font-size: 13px;
+}
+
+main.content {
+  color: var(--text-muted);
+  font-size: 15px;
+}
+
+.intro {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  margin-bottom: 32px;
+  color: var(--text-muted);
+}
+
+h2 {
+  margin-top: 36px;
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--accent);
+  letter-spacing: 0.2px;
+}
+
+h3 {
+  margin-top: 22px;
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+p {
+  margin-bottom: 14px;
+}
+
+ul,
+ol {
+  padding-left: 22px;
+  margin-bottom: 16px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+strong {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+code,
+.kbd {
+  font-family: "SF Mono", Monaco, "JetBrains Mono", Consolas, monospace;
+  font-size: 13px;
+  background: rgba(124, 77, 255, 0.12);
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: var(--accent);
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(198, 169, 255, 0.3);
+  transition: border-color 0.15s, color 0.15s;
+}
+
+a:hover {
+  color: var(--link-hover);
+  border-bottom-color: var(--link-hover);
+}
+
+.callout {
+  border-left: 3px solid var(--gold);
+  background: rgba(228, 199, 107, 0.06);
+  padding: 14px 18px;
+  border-radius: 8px;
+  margin: 18px 0;
+  color: var(--text);
+  font-size: 14px;
+}
+
+footer.page {
+  margin-top: 56px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  color: var(--text-dim);
+  font-size: 13px;
+}
+
+footer.page .links {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* Index page card layout */
+.cards {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+  margin-top: 32px;
+}
+
+@media (min-width: 640px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card {
+  display: block;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px;
+  color: var(--text);
+  transition: transform 0.15s, border-color 0.15s, background 0.15s;
+  border-bottom: 1px solid var(--border); /* override link underline */
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(198, 169, 255, 0.3);
+  background: #18142A;
+}
+
+.card .label {
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.card h3 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  color: var(--text);
+}
+
+.card p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+</content>
+</invoke>
