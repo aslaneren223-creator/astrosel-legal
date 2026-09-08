@@ -1,86 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0B0912">
-  <title>Hesap ve Veri Silme — Astrosel</title>
-  <meta name="description" content="Astrosel uygulamasında hesabınızı ve verilerinizi nasıl sileceğinizi öğrenin.">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="canonical" href="https://astrosel.app/hesap-silme">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hesap ve Veri Silme — Astrosel</title>
+<style>
+:root { color-scheme: dark; }
+body { margin:0; background:#0a0a14; color:#d8d6e4; font:16px/1.7 system-ui,-apple-system,"Segoe UI",sans-serif; }
+main { max-width:44rem; margin:0 auto; padding:3rem 1.25rem 5rem; }
+h1 { color:#f5f5ff; font-size:1.9rem; margin:0 0 .35rem; letter-spacing:-.01em; }
+.updated { color:#85838f; font-size:.82rem; margin:0 0 2.5rem; font-variant-numeric:tabular-nums; }
+h2 { color:#b496f6; font-size:1.18rem; margin:2.75rem 0 .75rem; }
+h2 .num { opacity:.55; }
+h3 { color:#e6e4f2; font-size:1rem; margin:1.75rem 0 .5rem; }
+p { margin:0 0 1rem; }
+ul { margin:0 0 1rem; padding-left:1.2rem; }
+li { margin:.3rem 0; }
+strong { color:#f5f5ff; font-weight:600; }
+.note { background:rgba(180,150,246,.08); border:1px solid rgba(180,150,246,.22); border-radius:.75rem; padding:1rem 1.15rem; margin:0 0 1.75rem; color:#c8bdf0; }
+.card { display:grid; grid-template-columns:auto 1fr; gap:.4rem 1.25rem; background:rgba(255,255,255,.035); border:1px solid rgba(255,255,255,.08); border-radius:.75rem; padding:1rem 1.15rem; margin:0 0 1.25rem; }
+dt { color:#9a98a8; font-size:.88rem; }
+dd { margin:0; color:#f5f5ff; }
+a { color:#b496f6; }
+footer { margin-top:3.5rem; padding-top:1.25rem; border-top:1px solid rgba(255,255,255,.08); color:#85838f; font-size:.82rem; }
+</style>
 </head>
 <body>
-  <div class="shell">
-    <header class="page">
-      <div class="brand">★ Astrosel</div>
+<main>
       <h1>Hesap ve Veri Silme</h1>
-      <p class="meta">Son güncelleme: 14 Haziran 2026</p>
-    </header>
-
-    <main class="content">
-      <div class="intro">
-        Bu sayfa, <strong>Astrosel</strong> (geliştirici: Eren Aslan) uygulamasının kullanıcılarının
-        hesaplarını ve kişisel verilerini nasıl silebileceğini açıklar. Hesabınızı uygulama içinden
-        kendiniz silebilir veya aşağıdaki e-posta yöntemiyle silme talebinde bulunabilirsiniz.
-      </div>
-
-      <h2>1. Uygulama İçinden Hesabınızı Silme</h2>
-      <p>Hesabınızı doğrudan uygulama içinden, birkaç adımda kalıcı olarak silebilirsiniz:</p>
+      <p class="updated">Son güncelleme: 1 Eylül 2026 (sürüm 2026-09-01)</p>
+      <aside class="note">Astrosel hesabınızı ve verilerinizi uygulama içinden kendiniz silebilirsiniz. Uygulamaya erişemiyorsanız aynı talebi e-posta ile iletebilirsiniz. Bu sayfa, Google Play veri güvenliği bölümünde istenen hesap silme adresidir.</aside>
+      <h2><span class="num">1.</span> Uygulama İçinden Silme (Önerilen)</h2>
+      <p>1. Astrosel uygulamasını açın ve hesabınıza giriş yapın. 2. Alt menüden <strong>Profil</strong> sekmesine gidin. 3. Sayfanın altındaki <strong>Hesabı Sil</strong> seçeneğine dokunun. 4. Uyarıyı okuyup onaylayın.</p>
+      <p>Onayladığınız anda silme işlemi başlar ve geri alınamaz.</p>
+      <h2><span class="num">2.</span> Uygulamaya Erişemiyorsanız</h2>
+      <p>Hesabınıza giriş yapamıyorsanız <strong>iletisim@astrosel.app</strong> adresine, hesabınızın kayıtlı e-posta adresinden <strong>&quot;Hesap silme talebi&quot;</strong> konulu bir e-posta gönderin. Talebi doğrulayabilmemiz için kayıtlı e-posta adresinizden yazmanız gerekir.</p>
+      <p>Talebiniz en geç otuz gün içinde sonuçlandırılır.</p>
+      <dl class="card">
+        <dt>Silme talebi adresi</dt><dd>iletisim@astrosel.app</dd>
+        <dt>Konu</dt><dd>Hesap silme talebi</dd>
+        <dt>Gönderen</dt><dd>Hesabınızın kayıtlı e-posta adresi</dd>
+      </dl>
+      <h2><span class="num">3.</span> Silinen Veriler</h2>
+      <p>Hesabınız silindiğinde aşağıdaki kayıtlar kalıcı olarak silinir:</p>
       <ul>
-        <li>Astrosel uygulamasını açın ve hesabınıza giriş yapın.</li>
-        <li><strong>Profil</strong> ekranına gidin.</li>
-        <li>Sayfanın alt kısmındaki <strong>"Hesabı Sil"</strong> seçeneğine dokunun.</li>
-        <li>Çıkan onay penceresinde işlemi onaylayın.</li>
+        <li>Hesap ve giriş bilgileri</li>
+        <li>Profil bilgileri: ad, kullanıcı adı, e-posta, cinsiyet, yaş, ilişki durumu</li>
+        <li>Doğum tarihi, doğum saati ve doğum yeri</li>
+        <li>Tüm okumalarınız, yazdığınız sorular ve rüya metinleri</li>
+        <li>Kullanım sayaçları ve kredi kayıtları</li>
+        <li>Abonelik kaydı ve satın alma durumu</li>
+        <li>Bildirim anahtarları (push token)</li>
+        <li>Rıza kayıtları</li>
+        <li>Giriş denemesi kayıtlarınızdan <strong>kullanıcı adınıza bağlı</strong> olanlar</li>
       </ul>
-      <p>
-        Bu işlem geri alınamaz. Onayladıktan sonra hesabınız ve ilişkili tüm kayıtlarınız silme
-        sürecine alınır.
-      </p>
-
-      <h2>2. E-posta ile Silme Talebi</h2>
-      <p>
-        Uygulamaya erişiminiz yoksa, hesabınızın kayıtlı olduğu e-posta adresinden
-        <a href="mailto:iletisim@astrosel.app">iletisim@astrosel.app</a> adresine
-        <strong>"Hesap Silme Talebi"</strong> konulu bir e-posta gönderebilirsiniz. Talebiniz
-        kimliğiniz doğrulandıktan sonra en geç 30 gün içinde işleme alınır.
-      </p>
-
-      <h2>3. Silinen Veriler</h2>
-      <p>Hesabınız silindiğinde aşağıdaki kişisel verileriniz sistemden kalıcı olarak kaldırılır:</p>
+      <h2><span class="num">4.</span> Silinmeyen Veriler</h2>
       <ul>
-        <li>Hesap bilgileri: ad, kullanıcı adı, e-posta adresi</li>
-        <li>Astroloji profil verileri: doğum tarihi, doğum saati, doğum yeri, cinsiyet</li>
-        <li>Yüklediğiniz fotoğraflar (kahve falı görselleri)</li>
-        <li>Fal, astroloji ve uyum yorumu geçmişiniz</li>
-        <li>Kredi ve satın alma kayıtlarınız</li>
+        <li><strong>Kullanım ve maliyet kayıtları:</strong> Hizmetin işletilmesi ve maliyet takibi için tutulan teknik kayıtlarda kullanıcı bağlantısı kaldırılır; kayıt sizinle ilişkilendirilemez hâle gelir ve anonim olarak saklanmaya devam eder.</li>
+        <li><strong>Giriş denemelerinin IP kayıtları:</strong> Bir giriş denemesinin IP kaydı hangi hesaba ait olduğunu göstermez — aynı IP adresini birden çok kişi kullanabilir ve başarısız denemede hesap hiç belirlenmemiş olabilir. Bu yüzden hesap silinirken seçilerek silinemezler; <strong>24 saat</strong> içinde otomatik olarak silinirler.</li>
+        <li><strong>Yasal saklama zorunluluğu bulunan kayıtlar:</strong> İlgili mevzuat saklamayı zorunlu kılıyorsa öngörülen süre boyunca saklanır.</li>
+        <li><strong>Mağaza kayıtları:</strong> Apple App Store ve Google Play üzerindeki satın alma ve fatura kayıtları ilgili mağazaya aittir; bu kayıtlar tarafımızca silinemez.</li>
       </ul>
-
-      <h2>4. Saklama Süreleri</h2>
-      <p>
-        Hesap silme talebiniz sonrasında verileriniz <strong>30 gün içinde</strong> sistemlerimizden
-        kalıcı olarak silinir. Yasal yükümlülükler (örneğin vergi ve faturalandırma mevzuatı) gereği
-        saklanması zorunlu olan işlem kayıtları, ilgili yasal sürenin sonuna kadar anonim veya
-        sınırlı biçimde tutulabilir; bu süre sonunda bunlar da silinir.
-      </p>
-
-      <h2>5. İletişim</h2>
-      <p>
-        Hesap veya veri silmeye ilişkin sorularınız için:
-      </p>
+      <h2><span class="num">5.</span> Aboneliğinizi Ayrıca İptal Edin</h2>
+      <p>Hesabınızı silmek, mağaza üzerinden alınmış aboneliği <strong>kendiliğinden iptal etmez</strong>. Ücret tahsil edilmeye devam etmemesi için aboneliğinizi mağaza hesabınızdan da iptal ediniz.</p>
       <ul>
-        <li><strong>E-posta:</strong> <a href="mailto:iletisim@astrosel.app">iletisim@astrosel.app</a></li>
+        <li><strong>iPhone / iPad:</strong> Ayarlar › Apple hesabınız › Abonelikler › Astrosel › Aboneliği İptal Et</li>
+        <li><strong>Android:</strong> Google Play › profil simgesi › Ödemeler ve abonelikler › Abonelikler › Astrosel › Aboneliği iptal et</li>
       </ul>
-    </main>
-
-    <footer class="page">
-      <div>© 2026 Astrosel · Eren Aslan</div>
-      <div class="links">
-        <a href="index.html">Ana sayfa</a>
-        <a href="privacy.html">Gizlilik</a>
-        <a href="terms.html">Şartlar</a>
-        <a href="mailto:iletisim@astrosel.app">İletişim</a>
-      </div>
-    </footer>
-  </div>
+      <h2><span class="num">6.</span> Veri Sorumlusu</h2>
+      <dl class="card">
+        <dt>Veri sorumlusu</dt><dd>Eren Aslan (gerçek kişi)</dd>
+        <dt>E-posta</dt><dd>iletisim@astrosel.app</dd>
+        <dt>Ülke</dt><dd>Türkiye</dd>
+      </dl>
+      <footer>Astrosel · 1 Eylül 2026</footer>
+</main>
 </body>
 </html>
