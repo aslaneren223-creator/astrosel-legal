@@ -5,16 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#0B0912">
   <title>Gizlilik Politikası — Astrosel</title>
-  <meta name="description" content="Astrosel uygulamasının KVKK ve GDPR uyumlu gizlilik politikası.">
+  <!-- 2026-09-08 · H-3: "GDPR uyumlu" ifadesi çıkarıldı (K50 — hiçbir belgede
+       GDPR uyum ölçümü yok; yeni kuşak metinde GDPR hiç geçmiyor). -->
+  <meta name="description" content="Astrosel uygulamasının KVKK kapsamındaki gizlilik politikası.">
   <link rel="stylesheet" href="styles.css">
-  <link rel="canonical" href="https://astrosel.app/privacy">
+  <!-- 2026-09-08 · H-4: canonical de /privacy'yi gösteriyordu; o rota 404. -->
+  <link rel="canonical" href="https://astrosel.app/gizlilik-politikasi">
 </head>
 <body>
   <div class="shell">
     <header class="page">
       <div class="brand">★ Astrosel</div>
       <h1>Gizlilik Politikası</h1>
-      <p class="meta">Son güncelleme: 14 Mayıs 2026 · Yürürlük: 14 Mayıs 2026</p>
+      <!-- 2026-09-08 · "Son güncelleme" 8 Eylül'e çekildi: H-2 (ZDR), H-3 (GDPR uyumlu), H-4 (ölü URL)
+           düzeltmeleri 8 Eylül'de yapıldı. "Yürürlük" DEĞİŞMEDİ: veri işleme kapsamı genişlemedi,
+           doğrulanmamış üçüncü taraf taahhütleri çıkarıldı. Yayın: DEPLOY.md → YAYIN KOMUTU. -->
+      <p class="meta">Son güncelleme: 8 Eylül 2026 · Yürürlük: 14 Mayıs 2026</p>
     </header>
 
     <main class="content">
@@ -98,7 +104,10 @@
 
       <h3>5.1 Supabase Inc. (AB — Frankfurt)</h3>
       <p>
-        Veritabanı yönetimi ve kimlik doğrulama hizmetleri. Veriler, AB içindeki GDPR uyumlu
+        <!-- 2026-09-08 · H-3: "GDPR uyumlu altyapı" nitelemesi çıkarıldı — üçüncü
+             tarafın uyumu bizim ölçümümüz değil. Konum bilgisi (AB/Frankfurt)
+             olgusal olduğu için kaldı. -->
+        Veritabanı yönetimi ve kimlik doğrulama hizmetleri. Veriler AB içindeki (Frankfurt)
         altyapıda işlenmektedir. <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase Privacy</a>.
       </p>
 
@@ -106,8 +115,18 @@
       <p>
         Yapay zeka destekli yorum üretimi (Claude modeli). Uygulamada girdiğiniz fal, rüya veya
         astroloji soruları Anthropic API'sine iletilir. Anthropic, API isteklerini model eğitiminde
-        kullanmaz ve Zero Data Retention politikasına uygun davranır. Verileriniz hesabınızla
-        ilişkilendirilmez. <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">Anthropic Privacy</a>.
+        kullanmadığını kendi politikasında beyan etmektedir. Verilerin bu sağlayıcı tarafından ne
+        kadar süreyle saklandığı Anthropic'in kendi politikasına tabidir.
+        <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">Anthropic Privacy</a>.
+        <!-- 2026-09-08 · H-2 YUMUŞATILDI: "Zero Data Retention politikasına uygun
+             davranır" ÇIKARILDI ve "model eğitiminde kullanmaz" bir BEYAN olarak
+             kaynağına iade edildi. Gerekçe: ZDR standart API'de otomatik değildir,
+             ayrı bir anlaşma gerektirir ve bizde doğrulanmadı; AI_VERI_AKTARIMI.md
+             §5 zaten "tarafımızca doğrulanmış taahhüt yok" diyor — doğrulamadığımız
+             bir şeyi hukuki metinde TAAHHÜT edemeyiz.
+             "Verileriniz hesabınızla ilişkilendirilmez" cümlesi de çıkarıldı: aynı
+             sınıf, doğrulanmamış üçüncü taraf davranışı.
+             Kaynak: METIN_KARAR_FORMU.md EK-6.3 · H-2. -->
       </p>
 
       <h3>5.3 RevenueCat Inc. (ABD)</h3>
@@ -201,7 +220,10 @@
       <p>
         Bu Gizlilik Politikası zaman zaman güncellenebilir. Önemli değişiklikler uygulama içi
         bildirim veya e-posta yoluyla duyurulur. Güncel politikayı her zaman uygulama içinden ve
-        <a href="https://astrosel.app/privacy">astrosel.app/privacy</a> adresinden inceleyebilirsiniz.
+        <!-- 2026-09-08 · H-4: eski bağlantı astrosel.app/privacy'ye gidiyordu ve
+             o rota 404 (site rotaları Türkçe slug: /gizlilik-politikasi).
+             Kaynak: METIN_KARAR_FORMU.md EK-6.3 · H-4. -->
+        <a href="https://astrosel.app/gizlilik-politikasi">astrosel.app/gizlilik-politikasi</a> adresinden inceleyebilirsiniz.
       </p>
 
       <h2>13. İletişim</h2>
